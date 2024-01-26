@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { BandContext } from '../context/quotesContext'
 
 export default function Quotes(props) {
+  const bands = useContext(BandContext)
   const {
     quotes,
     highlightedQuote,
